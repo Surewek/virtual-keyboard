@@ -1,0 +1,77 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.text-field {
+    color: aquamarine;
+    background-color: black;
+    width: 1200px;
+    height: 100px;
+    pointer-events: none;
+}
+
+.keyboard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 1200px;
+    padding: 25px;
+    background-color: lightblue;
+
+}
+
+.keyboard-row {
+
+    width: 100%;
+    
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.button {
+    display: block;
+    width: 62px;
+    height: 62px;
+    cursor: pointer;
+    background-color: gainsboro;
+    color: dimgray;
+    border: none;
+    border-radius: 6px;
+}
+
+.medium-button {
+    display: block;
+    width: auto;
+    min-width: 62px;
+    height: 62px;
+    cursor: pointer;
+    background-color: burlywood;
+    color: dimgray;
+    border: none;
+    border-radius: 6px;
+}
+
+.long-button {
+    display: block;
+    width: auto;
+    min-width: 440px;
+    height: 62px;
+    cursor: pointer;
+    background-color: gainsboro;
+    color: dimgray;
+    border: none;
+    border-radius: 6px;
+}
+
+.button:hover {
+    background-color: darkgrey;
+}
+
+.hightlight {
+    background-color: darksalmon;
+}
