@@ -12,7 +12,6 @@ const field = document.querySelector('.text-field');
 const rows = document.querySelectorAll('.keyboard-row');
 const finalBtn = ['Tab', 'CapsLock', 'ShiftLeft', 'ControlLeft'];
 const bigBtn = [
-  'Backquote',
   'Tab',
   'CapsLock',
   'ShiftLeft',
@@ -25,10 +24,6 @@ const bigBtn = [
   'AltLeft',
   'AltRight',
   'ControlRight',
-  'ArrowUp',
-  'ArrowLeft',
-  'ArrowDown',
-  'ArrowRight',
 ];
 
 let i = 0;

@@ -7,7 +7,7 @@ function generateNewHTML(parent, elem, elemClass = '', content = '', data = '') 
 }
 
 export function generateField(parent) {
-  generateNewHTML(parent, 'textarea', 'text-field', 'place');
+  generateNewHTML(parent, 'textarea', 'text-field', 'created in Windows 10');
 }
 
 export function generateKeyboardPlace(parent) {
