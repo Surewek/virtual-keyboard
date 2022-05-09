@@ -52,11 +52,8 @@ const trueButtons = document.querySelectorAll('.button');
 
 function buttonsActiv(btn) {
   if (btn.classList.contains('button') || btn.classList.contains('long-button')) {
-    console.log(btn.dataset.code);
-
     field.textContent += btn.textContent;
   } else if (btn.classList.contains('medium-button')) {
-    console.log(btn.dataset.code);
     switch (btn.dataset.code) {
       case 'Backspace':
         field.textContent = field.textContent.slice(0, -1);
@@ -70,7 +67,6 @@ function buttonsActiv(btn) {
       case 'CapsLock':
         if (isLowerCase) {
           for (let j = 0; j < trueButtons.length - 1; j += 1) {
-            console.log(trueButtons[j].textContent);
             trueButtons[j].textContent = trueButtons[j].textContent.toUpperCase();
           }
           isLowerCase = false;
@@ -95,7 +91,6 @@ document.addEventListener('click', (event) => {
 function shiftAction() {
   if (isLowerCase) {
     for (let j = 0; j < trueButtons.length - 1; j += 1) {
-      console.log(trueButtons[j].textContent);
       trueButtons[j].textContent = trueButtons[j].textContent.toUpperCase();
     }
     isLowerCase = false;
@@ -108,8 +103,6 @@ function shiftAction() {
 }
 
 document.addEventListener('keydown', (event) => {
-  console.log(event.code);
-
   if (event.code === 'ShiftLeft' || event.code === 'ShiftRight') {
     shiftAction();
   } else {
@@ -120,7 +113,6 @@ document.addEventListener('keydown', (event) => {
 });
 
 document.addEventListener('keyup', (event) => {
-  console.log(event.code);
   if (event.code === 'ShiftLeft' || event.code === 'ShiftRight') {
     shiftAction();
   } else {
